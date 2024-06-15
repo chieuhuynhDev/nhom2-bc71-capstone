@@ -26,7 +26,7 @@
   background-color: #f7f9fc;
   border-radius: 6px;
   border: 1px solid #f7f9fc;
-  transition: 0.5s;
+  transition: 0.5s all;
   cursor: pointer;
 }
 .why__bottom .row .item:hover {
@@ -39,6 +39,53 @@
   font-size: 1.625rem;
   font-weight: 700;
 }
+
+/* START ABOUT OUR */
+.about__out {
+  background-color: #f7f9fc;
+}
+
+.about__out h6 {
+  font-weight: 700;
+  color: #dc4f72;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.about__out h3 {
+  font-size: 35px;
+  line-height: 40px;
+  color: #2c3038;
+  font-weight: 700;
+}
+
+.about__out .btn {
+  color: #fff;
+  background-color: #dc4f72;
+  border-color: #dc4f72;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 15px 35px;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.about__out .btn:hover {
+  background-color: #d62f58;
+  border-color: #cf2952;
+}
+.about__out .about__left {
+  padding-right: 30px;
+}
+.about__out .about__right {
+  transition: 0.5s all;
+  padding-left: 30px;
+}
+
+.about__out .about__right:hover {
+  transform: translateY(-15px);
+}
+
 /* ************************* */
 /* Dark theme */
 /* ************************* */

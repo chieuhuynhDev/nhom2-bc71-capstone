@@ -1,10 +1,44 @@
 /* ************************* */
 /* Light theme */
 /* ************************* */
+* {
+  font-size: 16px;
+  color: #5a5a5a;
+  font-family: "Nunito Sans", sans-serif;
+}
+/* CSS WHY CHOOSE US */
+.why__top h6 {
+  line-height: 20px;
+  font-weight: 700;
+  color: #dc4f72;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.why__top h3 {
+  color: #2c3038;
+  font-size: 2.875rem;
+  font-weight: 700;
+  line-height: 1;
+}
 
+.why__bottom .row .item {
+  padding: 3rem 2rem;
+  background-color: #f7f9fc;
+  border-radius: 6px;
+  border: 1px solid #f7f9fc;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.why__bottom .row .item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.095);
+}
 
-
-
+.why__bottom .row .item h3 {
+  color: #2c3038;
+  font-size: 1.625rem;
+  font-weight: 700;
+}
 /* ************************* */
 /* Dark theme */
 /* ************************* */

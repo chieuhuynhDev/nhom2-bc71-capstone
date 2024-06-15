@@ -4,7 +4,7 @@
 * {
   font-size: 16px;
   color: #5a5a5a;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 /* CSS WHY CHOOSE US */
 .why__top h6 {
@@ -31,7 +31,7 @@
 }
 .why__bottom .row .item:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.095);
+  box-shadow: 1px 5px 7.5px rgba(0, 0, 0, 0.226);
 }
 
 .why__bottom .row .item h3 {
@@ -45,14 +45,14 @@
   background-color: #f7f9fc;
 }
 
-.about__out h6 {
+.about__out .about__left h6 {
   font-weight: 700;
   color: #dc4f72;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
 
-.about__out h3 {
+.about__out .about__left h3 {
   font-size: 35px;
   line-height: 40px;
   color: #2c3038;
@@ -84,6 +84,26 @@
 
 .about__out .about__right:hover {
   transform: translateY(-15px);
+}
+
+.about__number h6 {
+  text-transform: capitalize;
+  color: #2c3038;
+  font-weight: 700;
+}
+.about__number h3 {
+  font-size: 3.125rem;
+  color: #dc4f72;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.about__number .number__item {
+  box-shadow: 1px 5px 7.5px 0 rgba(0, 0, 0, 0.226);
+  transition: 0.5s;
+}
+.about__number .number__item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.126);
 }
 
 /* ************************* */

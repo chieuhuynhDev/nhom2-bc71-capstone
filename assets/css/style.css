@@ -142,6 +142,45 @@
   cursor: pointer;
 }
 
+/* START GENERAL */
+
+.general {
+  background-color: #f7f9fc;
+}
+
+.general__img {
+  position: relative;
+}
+
+.general__img img {
+  position: sticky;
+  top: 80px;
+}
+
+.general__top h6 {
+  font-weight: 700;
+  color: #dc4f72;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.general__top h3 {
+  color: #2c3038;
+  font-size: 2.875rem;
+  font-weight: 700;
+}
+
+.general__img img {
+  transition: 0.5s all;
+}
+
+.general__img img:hover {
+  transform: translateY(-10px);
+}
+
+.accordion-item {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
 /* ************************* */
 /* Dark theme */
 /* ************************* */

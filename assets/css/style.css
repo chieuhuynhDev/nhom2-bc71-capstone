@@ -6,6 +6,7 @@
   color: #5a5a5a;
   font-family: "Nunito", sans-serif;
 }
+
 /* CSS WHY CHOOSE US */
 .why__top h6 {
   line-height: 20px;
@@ -14,6 +15,7 @@
   text-transform: uppercase;
   margin-bottom: 5px;
 }
+
 .why__top h3 {
   color: #2c3038;
   font-size: 2.875rem;
@@ -29,6 +31,7 @@
   transition: 0.5s all;
   cursor: pointer;
 }
+
 .why__bottom .row .item:hover {
   transform: translateY(-8px);
   box-shadow: 1px 5px 7.5px rgba(0, 0, 0, 0.226);
@@ -74,9 +77,11 @@
   background-color: #d62f58;
   border-color: #cf2952;
 }
+
 .about__out .about__left {
   padding-right: 30px;
 }
+
 .about__out .about__right {
   transition: 0.5s all;
   padding-left: 30px;
@@ -91,6 +96,7 @@
   color: #2c3038;
   font-weight: 700;
 }
+
 .about__number h3 {
   font-size: 3.125rem;
   color: #dc4f72;
@@ -98,12 +104,42 @@
   margin-bottom: 15px;
   margin-top: 10px;
 }
+
 .about__number .number__item {
   box-shadow: 1px 5px 7.5px 0 rgba(0, 0, 0, 0.226);
   transition: 0.5s;
 }
+
 .about__number .number__item:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.126);
+}
+
+/* START VISION */
+.vision {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)),
+    url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.vision h3 {
+  color: #ffffff;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.vision p {
+  color: #eee;
+}
+
+.vision .btn {
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 15px 35px;
+  transition: 0.5s all;
+  cursor: pointer;
 }
 
 /* ************************* */

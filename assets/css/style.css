@@ -1,7 +1,6 @@
 /* ************************* */
 /* Light theme */
 /* ************************* */
-
 /* Resset css */
 html,
 body {
@@ -19,9 +18,142 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
+    /* CSS WHY CHOOSE US */
+    .why__top h6 {
+        line-height: 20px;
+        font-weight: 700;
+        color: #dc4f72;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
 
-/* ************************* */
-/* Dark theme */
-/* ************************* */
+    .why__top h3 {
+        color: #2c3038;
+        font-size: 2.875rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .why__bottom .row .item {
+        padding: 3rem 2rem;
+        background-color: #f7f9fc;
+        border-radius: 6px;
+        border: 1px solid #f7f9fc;
+        transition: 0.5s all;
+        cursor: pointer;
+    }
+
+    .why__bottom .row .item:hover {
+        transform: translateY(-8px);
+        box-shadow: 1px 5px 7.5px rgba(0, 0, 0, 0.226);
+    }
+
+    .why__bottom .row .item h3 {
+        color: #2c3038;
+        font-size: 1.625rem;
+        font-weight: 700;
+    }
+
+    /* START ABOUT OUR */
+    .about__out {
+        background-color: #f7f9fc;
+    }
+
+    .about__out .about__left h6 {
+        font-weight: 700;
+        color: #dc4f72;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    .about__out .about__left h3 {
+        font-size: 35px;
+        line-height: 40px;
+        color: #2c3038;
+        font-weight: 700;
+    }
+
+    .about__out .btn {
+        color: #fff;
+        background-color: #dc4f72;
+        border-color: #dc4f72;
+        font-weight: 700;
+        font-size: 0.875rem;
+        padding: 15px 35px;
+        transition: 0.5s all;
+        cursor: pointer;
+    }
+
+    .about__out .btn:hover {
+        background-color: #d62f58;
+        border-color: #cf2952;
+    }
+
+    .about__out .about__left {
+        padding-right: 30px;
+    }
+
+    .about__out .about__right {
+        transition: 0.5s all;
+        padding-left: 30px;
+    }
+
+    .about__out .about__right:hover {
+        transform: translateY(-15px);
+    }
+
+    .about__number h6 {
+        text-transform: capitalize;
+        color: #2c3038;
+        font-weight: 700;
+    }
+
+    .about__number h3 {
+        font-size: 3.125rem;
+        color: #dc4f72;
+        font-weight: 700;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .about__number .number__item {
+        box-shadow: 1px 5px 7.5px 0 rgba(0, 0, 0, 0.226);
+        transition: 0.5s;
+    }
+
+    .about__number .number__item:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.126);
+    }
+
+    /* START VISION */
+    .vision {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)),
+            url(../img/bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .vision h3 {
+        color: #ffffff;
+        font-size: 1.875rem;
+        font-weight: 700;
+    }
+
+    .vision p {
+        color: #eee;
+    }
+
+    .vision .btn {
+        font-weight: 700;
+        font-size: 0.875rem;
+        padding: 15px 35px;
+        transition: 0.5s all;
+        cursor: pointer;
+    }
+
+    /* ************************* */
+    /* Dark theme */
+    /* ************************* */

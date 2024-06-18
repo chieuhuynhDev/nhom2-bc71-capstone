@@ -409,6 +409,33 @@ html {
   cursor: pointer;
 }
 
+/* BACK TO TỐP */
+.backTotop i {
+  color: #fff;
+  font-size: 1.25rem;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: rgba(220, 79, 114, 0.619);
+  border-radius: 5px;
+}
+.backTotop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+.backTotop:hover {
+  background-color: #dc4f72;
+  border-radius: 5px;
+}
+.backTotop.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* ************************* */
 /* Dark theme */
 /* ************************* */

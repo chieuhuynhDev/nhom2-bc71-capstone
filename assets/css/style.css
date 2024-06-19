@@ -18,142 +18,418 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
-    /* CSS WHY CHOOSE US */
-    .why__top h6 {
-        line-height: 20px;
-        font-weight: 700;
-        color: #dc4f72;
-        text-transform: uppercase;
-        margin-bottom: 5px;
-    }
+a {
+    text-decoration: none;
+}
 
-    .why__top h3 {
-        color: #2c3038;
-        font-size: 2.875rem;
-        font-weight: 700;
-        line-height: 1;
-    }
+.container {
+    max-width: 1200px;
+}
 
-    .why__bottom .row .item {
-        padding: 3rem 2rem;
-        background-color: #f7f9fc;
-        border-radius: 6px;
-        border: 1px solid #f7f9fc;
-        transition: 0.5s all;
-        cursor: pointer;
-    }
+/* START HEADER  */
 
-    .why__bottom .row .item:hover {
-        transform: translateY(-8px);
-        box-shadow: 1px 5px 7.5px rgba(0, 0, 0, 0.226);
-    }
 
-    .why__bottom .row .item h3 {
-        color: #2c3038;
-        font-size: 1.625rem;
-        font-weight: 700;
-    }
+header.main-header {
+    height: 90px;
+    background-color: #fff;
+    display: grid;
+    align-items: center;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+    transition: all 0.5s ease 0s;
+}
 
-    /* START ABOUT OUR */
-    .about__out {
-        background-color: #f7f9fc;
-    }
+header.nav-fixed {
+    padding: 0px;
+    background-color: #fff;
+    height: 70px;
+    border-bottom: none;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+}
 
-    .about__out .about__left h6 {
-        font-weight: 700;
-        color: #dc4f72;
-        text-transform: uppercase;
-        margin-bottom: 5px;
-    }
 
-    .about__out .about__left h3 {
-        font-size: 35px;
-        line-height: 40px;
-        color: #2c3038;
-        font-weight: 700;
-    }
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
 
-    .about__out .btn {
-        color: #fff;
-        background-color: #dc4f72;
-        border-color: #dc4f72;
-        font-weight: 700;
-        font-size: 0.875rem;
-        padding: 15px 35px;
-        transition: 0.5s all;
-        cursor: pointer;
-    }
+}
 
-    .about__out .btn:hover {
-        background-color: #d62f58;
-        border-color: #cf2952;
-    }
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
 
-    .about__out .about__left {
-        padding-right: 30px;
-    }
+.navbar-collapse {
+    justify-content: end;
 
-    .about__out .about__right {
-        transition: 0.5s all;
-        padding-left: 30px;
-    }
+}
 
-    .about__out .about__right:hover {
-        transform: translateY(-15px);
-    }
+header .nav-logo {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-size: 26px;
+    font-weight: 700;
+    color: #dc4f72;
+    letter-spacing: -1px;
+}
 
-    .about__number h6 {
-        text-transform: capitalize;
-        color: #2c3038;
-        font-weight: 700;
-    }
+.navbar .nav-item {
+    position: relative;
+    padding: 0 15px;
+}
 
-    .about__number h3 {
-        font-size: 3.125rem;
-        color: #dc4f72;
-        font-weight: 700;
-        margin-bottom: 15px;
-        margin-top: 10px;
-    }
 
-    .about__number .number__item {
-        box-shadow: 1px 5px 7.5px 0 rgba(0, 0, 0, 0.226);
-        transition: 0.5s;
-    }
 
-    .about__number .number__item:hover {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.126);
-    }
+.nav-link {
+    color: #2C3038;
+    transition: all 0.5s ease;
+}
 
-    /* START VISION */
-    .vision {
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)),
-            url(../img/bg.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-    }
+.navbar .navbar-nav .nav-link.active,
+.dropdown-item.active {
+    color: #dc4f72;
+    background-color: #fff;
+}
 
-    .vision h3 {
-        color: #ffffff;
-        font-size: 1.875rem;
-        font-weight: 700;
-    }
 
-    .vision p {
-        color: #eee;
-    }
 
-    .vision .btn {
-        font-weight: 700;
-        font-size: 0.875rem;
-        padding: 15px 35px;
-        transition: 0.5s all;
-        cursor: pointer;
-    }
 
-    /* ************************* */
-    /* Dark theme */
-    /* ************************* */
+.icon-down::after {
+    content: "\f107";
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: 12px;
+    color: #2C3038;
+
+}
+
+.navbar .search-right {
+    margin-right: 16px;
+}
+
+.search-right span.fa {
+    color: #5a5a5a;
+    background: #F7F9FC;
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid #eee;
+    opacity: 0.7;
+}
+
+.search-right span.fa:hover {
+    color: #2C3038;
+    opacity: 1;
+}
+
+.theme-button {
+    display: inline-block;
+    padding: 0px 30px;
+    text-transform: uppercase;
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px;
+    color: #dc4f72;
+    border-color: #dc4f72;
+    transition: 0.3s ease-out;
+}
+
+.theme-button:hover {
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
+    transition: 0.5s all;
+}
+
+.gg-moon {
+    overflow: hidden;
+    position: relative;
+    transform: rotate(-135deg) scale(var(--ggs, 1));
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-bottom: 2px solid transparent;
+}
+
+.gg-moon,
+.gg-moon:after {
+    box-sizing: border-box;
+    display: block;
+    border-radius: 50%;
+}
+
+.gg-moon:after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 18px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    top: 8px;
+    left: 2px;
+}
+
+.btn:active {
+    margin-left: 5px;
+    border: none;
+}
+
+.dropdown-item {
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover,
+.dropdown-item:hover {
+    color: #dc4f72;
+}
+
+a.nav-link:before,
+a.dropdown-item:before {
+    content: '';
+    position: absolute;
+    background: #dc4f72;
+    width: 0px;
+    height: 2px;
+    bottom: 8px;
+    transition: 0.5s all;
+}
+
+.navbar-nav .nav-link:hover:before,
+a.dropdown-item:hover:before {
+    width: 20px;
+}
+
+.dropdown-menu {
+    transform: translateX(-50px);
+    border: 1px solid #eee;
+    box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
+}
+
+.navbar-nav .dropdown-menu:before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border: 1px solid #eee;
+    display: block;
+    border-right: none;
+    border-bottom: none;
+    transform: translateX(-50%) rotateZ(45deg);
+    top: -7px;
+    left: 49%;
+    z-index: 1001;
+}
+
+/* END HEADER  */
+
+/* light dark switch */
+#switchButton {
+    background-color: white;
+    font-size: 20px;
+
+}
+
+#switchButton .fa-sun {
+    display: none;
+}
+
+#switchButton .fa-moon {
+    display: block;
+
+}
+
+/* light dark switch */
+
+
+.hero {
+    margin-top: 90px;
+}
+
+.content {
+    background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)),
+        url("../img/banner.jpg");
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background-repeat: no-repeat,
+        no-repeat,
+        no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.hero h3 {
+    color: #2C3038;
+    font-size: 50px;
+    line-height: 57px;
+    font-weight: 700;
+}
+
+.hero p {
+    color: #5a5a5a;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    max-width: 450px;
+}
+
+/* END SECTION: HERO */
+
+/* CSS WHY CHOOSE US */
+.why__top h6 {
+    line-height: 20px;
+    font-weight: 700;
+    color: #dc4f72;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.why__top h3 {
+    color: #2c3038;
+    font-size: 2.875rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.why__bottom .row .item {
+    padding: 3rem 2rem;
+    background-color: #f7f9fc;
+    border-radius: 6px;
+    border: 1px solid #f7f9fc;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.why__bottom .row .item:hover {
+    transform: translateY(-8px);
+    box-shadow: 1px 5px 7.5px rgba(0, 0, 0, 0.226);
+}
+
+.why__bottom .row .item h3 {
+    color: #2c3038;
+    font-size: 1.625rem;
+    font-weight: 700;
+}
+
+/* START ABOUT OUR */
+.about__out {
+    background-color: #f7f9fc;
+}
+
+.about__out .about__left h6 {
+    font-weight: 700;
+    color: #dc4f72;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.about__out .about__left h3 {
+    font-size: 35px;
+    line-height: 40px;
+    color: #2c3038;
+    font-weight: 700;
+}
+
+.about__out .btn {
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
+    font-weight: 700;
+    font-size: 0.875rem;
+    padding: 15px 35px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.about__out .btn:hover {
+    background-color: #d62f58;
+    border-color: #cf2952;
+}
+
+.about__out .about__left {
+    padding-right: 30px;
+}
+
+.about__out .about__right {
+    transition: 0.5s all;
+    padding-left: 30px;
+}
+
+.about__out .about__right:hover {
+    transform: translateY(-15px);
+}
+
+.about__number h6 {
+    text-transform: capitalize;
+    color: #2c3038;
+    font-weight: 700;
+}
+
+.about__number h3 {
+    font-size: 3.125rem;
+    color: #dc4f72;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.about__number .number__item {
+    box-shadow: 1px 5px 7.5px 0 rgba(0, 0, 0, 0.226);
+    transition: 0.5s;
+}
+
+.about__number .number__item:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.126);
+}
+
+/* START VISION */
+.vision {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)),
+        url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.vision h3 {
+    color: #ffffff;
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+
+.vision p {
+    color: #eee;
+}
+
+.vision .btn {
+    font-weight: 700;
+    font-size: 0.875rem;
+    padding: 15px 35px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+/* ************************* */
+/* Dark theme */
+/* ************************* */

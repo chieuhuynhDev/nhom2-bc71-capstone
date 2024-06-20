@@ -144,9 +144,12 @@ header .nav-logo {
     font-weight: 700;
     font-size: 14px;
     margin: 0px;
+    transition: 0.5s ease-out;
+}
+
+.btn-outline-pink {
     color: #dc4f72;
     border-color: #dc4f72;
-    transition: 0.3s ease-out;
 }
 
 .theme-button:hover {
@@ -429,6 +432,156 @@ a.dropdown-item:hover:before {
     transition: 0.5s all;
     cursor: pointer;
 }
+
+
+/* TESTIOMONIALS */
+.testimonials {
+    background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.77)),
+        url("../img/b2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.header-section {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.title-testimonials {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #dc4f72;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+
+}
+
+.header-section h2 {
+    color: #2C3038;
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.header-section p {
+    color: #5a5a5a;
+    font-size: 16px;
+    line-height: 22.5px;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.owl-testimonials .slider-info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 50px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 6px;
+
+}
+
+.owl-testimonials .avatar-img {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    overflow: hidden;
+    background: #f3f6f9;
+    border-radius: 50%;
+    border: 3px solid #dc4f72;
+}
+
+.message {
+    position: relative;
+}
+
+.message span {
+    font-size: 30px;
+    color: #2C3038;
+    opacity: 0.2;
+    position: absolute;
+    top: 0px;
+    left: -40px;
+    right: 0;
+}
+
+
+.owl-stage-oute {
+    position: relative;
+    overflow: hidden;
+}
+
+.name h4 {
+    font-size: 18px;
+    color: #dc4f72;
+    font-weight: 400;
+}
+
+.name p {
+    color: #5a5a5a;
+    font-size: 13px;
+}
+
+.owl-item {
+    width: 575px;
+}
+
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    background: transparent;
+    padding: 0;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: #fff;
+    width: 40px;
+    height: 5px;
+    margin: 5px 5px;
+    display: block;
+    border: none;
+    transition: opacity .2s ease;
+    border-radius: 0;
+    position: relative;
+}
+
+.owl-stage {
+    transform: translate3d(-1725px, 0px, 0px);
+    transition: all 0.25s ease 0s;
+    width: 4600px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #dc4f72;
+}
+
+
+/* END TESTIOMONIALS */
+
+/* BOOK A DEMO */
+.btn-pink {
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
+    transition: 0.5s all;
+}
+
+.btn-pink:hover {
+    color: #fff;
+    background-color: #d62f58;
+    border-color: #cf2952;
+}
+
+/* END BOOK A DEMO */
+
 
 /* ************************* */
 /* Dark theme */

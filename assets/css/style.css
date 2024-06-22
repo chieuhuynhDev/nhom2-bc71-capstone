@@ -165,6 +165,15 @@ header .nav-logo {
   transition: 0.5s all;
 }
 
+.dark-light {
+  line-height: 10px;
+}
+
+.btn-dark-light {
+  margin-left: 10px;
+  border: none;
+}
+
 .gg-moon {
   overflow: hidden;
   position: relative;
@@ -196,6 +205,15 @@ header .nav-logo {
 .btn:active {
   margin-left: 5px;
   border: none;
+  border-color: none;
+}
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(220, 79, 114, 0.25);
+}
+
+.btn-outline-pink:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 79, 114, 0.5);
 }
 
 .dropdown-item {

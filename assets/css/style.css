@@ -1114,6 +1114,15 @@ button.navbar-toggler.collapsed .icon-close {
 
   }
 
+  .hero h3 {
+    color: var(--title-color);
+
+  }
+
+  .hero p {
+    color: var(--text-color);
+  }
+
   .content {
     background: linear-gradient(to right, var(--bg-color), rgba(255, 255, 255, 0.92)),
       url("../img/banner.jpg");

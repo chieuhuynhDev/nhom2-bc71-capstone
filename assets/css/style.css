@@ -680,6 +680,440 @@ a.dropdown-item:hover:before {
   transition: 0.3 ease;
 }
 /* END FOOTER */
+* {
+  font-size: 16px;
+  color: #5a5a5a;
+  font-family: "Nunito", sans-serif;
+}
+
+/* CSS WHY CHOOSE US */
+.why__top h6 {
+  line-height: 20px;
+  font-weight: 700;
+  color: #dc4f72;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.why__top h3 {
+  color: #2c3038;
+  font-size: 2.875rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.why__bottom .row .item {
+  padding: 3rem 2rem;
+  background-color: #f7f9fc;
+  border-radius: 6px;
+  border: 1px solid #f7f9fc;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.why__bottom .row .item:hover {
+  transform: translateY(-8px);
+  box-shadow: 1px 5px 7.5px rgba(0, 0, 0, 0.226);
+}
+
+.why__bottom .row .item h3 {
+  color: #2c3038;
+  font-size: 1.625rem;
+  font-weight: 700;
+}
+
+/* START ABOUT OUR */
+.about__out {
+  background-color: #f7f9fc;
+}
+
+.about__out .about__left h6 {
+  font-weight: 700;
+  color: #dc4f72;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.about__out .about__left h3 {
+  font-size: 35px;
+  line-height: 40px;
+  color: #2c3038;
+  font-weight: 700;
+}
+
+.about__out .btn {
+  color: #fff;
+  background-color: #dc4f72;
+  border-color: #dc4f72;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 15px 35px;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.about__out .btn:hover {
+  background-color: #d62f58;
+  border-color: #cf2952;
+}
+
+.about__out .about__left {
+  padding-right: 30px;
+}
+
+.about__out .about__right {
+  transition: 0.5s all;
+  padding-left: 30px;
+}
+
+.about__out .about__right:hover {
+  transform: translateY(-15px);
+}
+
+.about__number h6 {
+  text-transform: capitalize;
+  color: #2c3038;
+  font-weight: 700;
+}
+
+.about__number h3 {
+  font-size: 3.125rem;
+  color: #dc4f72;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.about__number .number__item {
+  box-shadow: 1px 5px 7.5px 0 rgba(0, 0, 0, 0.226);
+  transition: 0.5s;
+}
+
+.about__number .number__item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.126);
+}
+
+/* START VISION */
+.vision {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)),
+    url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.vision h3 {
+  color: #ffffff;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.vision p {
+  color: #eee;
+}
+
+.vision .btn {
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 15px 35px;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+/* START GENERAL */
+
+.general {
+  background-color: #f7f9fc;
+}
+
+.general__img {
+  position: relative;
+}
+
+.general__img img {
+  position: sticky;
+  top: 80px;
+}
+
+.general__top h6 {
+  font-weight: 700;
+  color: #dc4f72;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.general__top h3 {
+  color: #2c3038;
+  font-size: 2.875rem;
+  font-weight: 700;
+}
+
+.general__img img {
+  transition: 0.5s all;
+}
+
+.general__img img:hover {
+  transform: translateY(-10px);
+}
+
+.general__faq .accordion-item {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.general__faq .accordion-button {
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #2c3038;
+}
+
+/* START PROJECT */
+
+.complete__top h6 {
+  font-weight: 700;
+  color: #dc4f72;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.complete__top h3 {
+  color: #2c3038;
+  font-size: 2.875rem;
+  font-weight: 700;
+}
+
+.complete__bottom .nav-pills .nav-link {
+  color: #2c3038;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.375rem;
+  padding: 15px 116px;
+  border-radius: 0;
+  border-bottom: 3px solid rgba(128, 128, 128, 0.477);
+  background: #fff !important;
+}
+
+.complete__bottom .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #dc4f72;
+  border-bottom-color: #dc4f72;
+}
+
+.complete__bottom .tab-content .tab-pane h3 {
+  color: #2c3038;
+  margin-bottom: 24px;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.complete__bottom .btn {
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 15px 35px;
+  transition: 0.5s all;
+  cursor: pointer;
+  color: #dc4f72;
+  border-color: #dc4f72;
+  transition: 0.5s all;
+  margin-top: 24px;
+}
+
+.complete__bottom .btn:hover {
+  color: #fff;
+  background-color: #dc4f72;
+  border-color: #dc4f72;
+}
+
+.complete__bottom .tab-content .tab-pane img {
+  transition: 0.5s all;
+}
+.complete__bottom .tab-content .tab-pane img:hover {
+  transform: translateY(-10px);
+}
+
+/* ************************* */
+/* Dark theme */
+/* ************************* */
+/* Resset css */
+html,
+body {
+  font-family: "Nunito", sans-serif;
+  color: #404040;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS WHY CHOOSE US */
+.why__top h6 {
+  line-height: 20px;
+  font-weight: 700;
+  color: #dc4f72;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.why__top h3 {
+  color: #2c3038;
+  font-size: 2.875rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.why__bottom .row .item {
+  padding: 3rem 2rem;
+  background-color: #f7f9fc;
+  border-radius: 6px;
+  border: 1px solid #f7f9fc;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.why__bottom .row .item:hover {
+  transform: translateY(-8px);
+  box-shadow: 1px 5px 7.5px rgba(0, 0, 0, 0.226);
+}
+
+.why__bottom .row .item h3 {
+  color: #2c3038;
+  font-size: 1.625rem;
+  font-weight: 700;
+}
+
+/* START ABOUT OUR */
+.about__out {
+  background-color: #f7f9fc;
+}
+
+.about__out .about__left h6 {
+  font-weight: 700;
+  color: #dc4f72;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.about__out .about__left h3 {
+  font-size: 35px;
+  line-height: 40px;
+  color: #2c3038;
+  font-weight: 700;
+}
+
+.about__out .btn {
+  color: #fff;
+  background-color: #dc4f72;
+  border-color: #dc4f72;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 15px 35px;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.about__out .btn:hover {
+  background-color: #d62f58;
+  border-color: #cf2952;
+}
+
+.about__out .about__left {
+  padding-right: 30px;
+}
+
+.about__out .about__right {
+  transition: 0.5s all;
+  padding-left: 30px;
+}
+
+.about__out .about__right:hover {
+  transform: translateY(-15px);
+}
+
+.about__number h6 {
+  text-transform: capitalize;
+  color: #2c3038;
+  font-weight: 700;
+}
+
+.about__number h3 {
+  font-size: 3.125rem;
+  color: #dc4f72;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.about__number .number__item {
+  box-shadow: 1px 5px 7.5px 0 rgba(0, 0, 0, 0.226);
+  transition: 0.5s;
+}
+
+.about__number .number__item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.126);
+}
+
+/* START VISION */
+.vision {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)),
+    url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.vision h3 {
+  color: #ffffff;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.vision p {
+  color: #eee;
+}
+
+.vision .btn {
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 15px 35px;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+/* BACK TO TỐP */
+.backTotop i {
+  color: #fff;
+  font-size: 1.25rem;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: rgba(220, 79, 114, 0.619);
+  border-radius: 5px;
+}
+.backTotop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+.backTotop:hover {
+  background-color: #dc4f72;
+  border-radius: 5px;
+}
+.backTotop.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
 
 /* ************************* */
 /* Dark theme */

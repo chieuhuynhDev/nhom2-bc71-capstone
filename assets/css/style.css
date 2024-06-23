@@ -6,7 +6,7 @@ html,
 body {
   font-family: "Nunito", sans-serif;
   color: #404040;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.15;
   background: var(--bg-color);
   font-family: "Nunito", sans-serif;
@@ -920,12 +920,28 @@ button.navbar-toggler.collapsed .icon-close {
   font-weight: 700;
 }
 
+@media screen and (max-width: 768px) {
+  .complete__bottom {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .complete__bottom2 {
+    display: none;
+  }
+}
+
+.complete__bottom .nav-item {
+  width: 33.333%;
+}
+
 .complete__bottom .nav-pills .nav-link {
+  width: 100%;
   color: #2c3038;
   cursor: pointer;
   font-weight: 700;
   font-size: 1.375rem;
-  padding: 15px 116px;
   border-radius: 0;
   border-bottom: 3px solid rgba(128, 128, 128, 0.477);
   background: #fff !important;
@@ -968,11 +984,43 @@ button.navbar-toggler.collapsed .icon-close {
 .complete__bottom .tab-content .tab-pane img:hover {
   transform: translateY(-10px);
 }
-
-/* ************************* */
-/* Dark theme */
-/* ************************* */
-/* Resset css */
+.complete__bottom2 .accordion-item > .accordion-header .accordion-button {
+  color: #2c3038;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.complete__bottom2 .accordion-item > .accordion-header .accordion-button:focus {
+  color: #dc4f72;
+  border-bottom: 3px solid #dc4f72;
+}
+.complete__bottom2 .accordion-collapse .accordion-body h3 {
+  margin-bottom: 14px;
+  font-size: 1.625rem;
+  color: #2c3038;
+  font-weight: 700;
+  border-bottom: 0;
+}
+.complete__bottom2 .accordion-collapse .accordion-body button {
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 15px 35px;
+  transition: 0.5s all;
+  color: #dc4f72;
+  border-color: #dc4f72;
+  transition: 0.5s all;
+  margin-top: 24px;
+}
+.complete__bottom2 .accordion-collapse .accordion-body button:hover {
+  color: #fff;
+  background-color: #dc4f72;
+  border-color: #dc4f72;
+}
+.complete__bottom2 .accordion-collapse .accordion-body img {
+  transition: 0.5s all;
+}
+.complete__bottom2 .accordion-collapse .accordion-body img:hover {
+  transform: translateY(-10px);
+}
 
 /* CSS WHY CHOOSE US */
 .why__top h6 {

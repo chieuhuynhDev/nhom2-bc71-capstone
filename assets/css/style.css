@@ -7,13 +7,14 @@ body {
   font-family: "Nunito", sans-serif;
   color: #404040;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.15;
+  background: var(--bg-color);
+  font-family: "Nunito", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +24,7 @@ html {
 a {
   text-decoration: none;
 }
+
 ul {
   list-style: none;
   padding: 0;
@@ -32,18 +34,14 @@ ul {
   max-width: 1200px;
 }
 
-:root {
-  --text-color: #5a5a5a;
-  --light-bg-color: #f7f9fc;
-  --title-color: #2c3038;
-  --bg-color: #fff;
-  --card-curve: 6px;
-  --card-box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
-  --primary: #dc4f72;
+.clear {
+  clear: both;
 }
+
 .home {
   margin: 0 0 1.5em;
 }
+
 /* START HEADER  */
 
 header.main-header {
@@ -94,20 +92,26 @@ header .nav-logo {
   letter-spacing: -1px;
 }
 
+.navbar .nav-logo span.fa-regular {
+  display: inline-block;
+  color: var(--primary);
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+}
+
 .navbar .nav-item {
   position: relative;
   padding: 0 15px;
 }
 
 .nav-link {
-  color: #2c3038;
+  color: var(--title-color);
   transition: all 0.5s ease;
 }
 
 .navbar .navbar-nav .nav-link.active,
 .dropdown-item.active {
   color: #dc4f72;
-  background-color: #fff;
 }
 
 .icon-down::after {
@@ -126,7 +130,7 @@ header .nav-logo {
 
 .search-right span.fa {
   color: #5a5a5a;
-  background: #f7f9fc;
+  background: var(--light-bg-color);
   font-size: 15px;
   width: 40px;
   height: 40px;
@@ -165,37 +169,29 @@ header .nav-logo {
   transition: 0.5s all;
 }
 
-.gg-moon {
-  overflow: hidden;
-  position: relative;
-  transform: rotate(-135deg) scale(var(--ggs, 1));
-  width: 20px;
-  height: 20px;
-  border: 2px solid;
-  border-bottom: 2px solid transparent;
+.dark-light {
+  line-height: 10px;
 }
 
-.gg-moon,
-.gg-moon:after {
-  box-sizing: border-box;
-  display: block;
-  border-radius: 50%;
-}
-
-.gg-moon:after {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 18px;
-  border: 2px solid transparent;
-  box-shadow: 0 0 0 2px;
-  top: 8px;
-  left: 2px;
+.btn-dark-light {
+  margin-left: 10px;
+  border: none;
+  background: #fff;
 }
 
 .btn:active {
   margin-left: 5px;
   border: none;
+  border-color: none;
+}
+
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(220, 79, 114, 0.25);
+}
+
+.btn-outline-pink:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 79, 114, 0.5);
 }
 
 .dropdown-item {
@@ -245,20 +241,59 @@ a.dropdown-item:hover:before {
   z-index: 1001;
 }
 
+.navbar-toggler {
+  position: relative;
+  padding: 0rem 0rem !important;
+  border: 0 none;
+  font-size: 24px !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle;
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+
+button.navbar-toggler.collapsed .icon-expand {
+  display: block;
+}
+
+button.navbar-toggler .icon-close {
+  display: block;
+}
+
+button.navbar-toggler .icon-expand {
+  display: none;
+}
+
+button.navbar-toggler.collapsed .icon-close {
+  display: none;
+}
+
 /* END HEADER  */
 
 /* light dark switch */
 #switchButton {
-  background-color: white;
+  background-color: inherit;
   font-size: 20px;
+  transition: 0.5s;
 }
 
-#switchButton .fa-sun {
-  display: none;
+#switchButton2 {
+  background-color: inherit;
+  font-size: 20px;
+  transition: 0.5s;
 }
 
-#switchButton .fa-moon {
-  display: block;
+.btn-dark-light .far {
+  font-size: 20px;
 }
 
 /* light dark switch */
@@ -594,6 +629,7 @@ a.dropdown-item:hover:before {
   display: block;
   margin: 10px 0;
 }
+
 .column li a {
   color: #656f7b;
   font-weight: normal;
@@ -602,12 +638,14 @@ a.dropdown-item:hover:before {
   padding: 0;
   text-transform: capitalize;
 }
+
 .section-footer .end-column {
   padding: 2em;
   background-color: var(--bg-color);
   border-radius: var(--card-curve);
   box-shadow: var(--card-box-shadow);
 }
+
 .form-email h4 {
   font-size: 18px;
   line-height: 25px;
@@ -615,11 +653,13 @@ a.dropdown-item:hover:before {
   margin-bottom: 30px;
   font-weight: 500;
 }
+
 .section-footer form {
   display: flex;
   margin-bottom: 15px;
   justify-content: space-between;
 }
+
 .section-footer .subscribe input[type="email"] {
   background: var(--light-bg-color);
   border: none;
@@ -651,6 +691,7 @@ a.dropdown-item:hover:before {
   color: var(--text-color);
   font-size: 16px;
 }
+
 /* .column li a:hover{
   color: var(--primary);
   transition: 0.3 ease;
@@ -673,18 +714,15 @@ a.dropdown-item:hover:before {
 .section-footer p a {
   color: var(--title-color);
 }
+
 .column li a:hover,
 .social li a:hover,
 .CopyRights a:hover {
   color: var(--primary);
   transition: 0.3 ease;
 }
+
 /* END FOOTER */
-* {
-  font-size: 16px;
-  color: #5a5a5a;
-  font-family: "Nunito", sans-serif;
-}
 
 /* CSS WHY CHOOSE US */
 .why__top h6 {
@@ -935,23 +973,6 @@ a.dropdown-item:hover:before {
 /* Dark theme */
 /* ************************* */
 /* Resset css */
-html,
-body {
-  font-family: "Nunito", sans-serif;
-  color: #404040;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 /* CSS WHY CHOOSE US */
 .why__top h6 {
@@ -1099,6 +1120,7 @@ html {
   background-color: rgba(220, 79, 114, 0.619);
   border-radius: 5px;
 }
+
 .backTotop {
   position: fixed;
   bottom: 0;
@@ -1106,10 +1128,12 @@ html {
   visibility: hidden;
   opacity: 0;
 }
+
 .backTotop:hover {
   background-color: #dc4f72;
   border-radius: 5px;
 }
+
 .backTotop.cd-top--is-visible {
   visibility: visible;
   opacity: 1;

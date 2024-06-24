@@ -380,28 +380,6 @@ button.navbar-toggler.collapsed .icon-close {
   line-height: 1;
 }
 
-* {
-  font-size: 16px;
-  color: #5a5a5a;
-  font-family: "Nunito", sans-serif;
-}
-
-/* CSS WHY CHOOSE US */
-.why__top h6 {
-  line-height: 20px;
-  font-weight: 700;
-  color: #dc4f72;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-}
-
-.why__top h3 {
-  color: #2c3038;
-  font-size: 2.875rem;
-  font-weight: 700;
-  line-height: 1;
-}
-
 .why__bottom .row .item {
   padding: 3rem 2rem;
   background-color: #f7f9fc;
@@ -776,41 +754,7 @@ button.navbar-toggler.collapsed .icon-close {
 
 /* END FOOTER */
 
-/* CSS WHY CHOOSE US */
-.why__top h6 {
-  line-height: 20px;
-  font-weight: 700;
-  color: #dc4f72;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-}
 
-.why__top h3 {
-  color: #2c3038;
-  font-size: 2.875rem;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.why__bottom .row .item {
-  padding: 3rem 2rem;
-  background-color: #f7f9fc;
-  border-radius: 6px;
-  border: 1px solid #f7f9fc;
-  transition: 0.5s all;
-  cursor: pointer;
-}
-
-.why__bottom .row .item:hover {
-  transform: translateY(-8px);
-  box-shadow: 1px 5px 7.5px rgba(0, 0, 0, 0.226);
-}
-
-.why__bottom .row .item h3 {
-  color: #2c3038;
-  font-size: 1.625rem;
-  font-weight: 700;
-}
 
 /* START ABOUT OUR */
 .about__out {
@@ -1094,7 +1038,7 @@ button.navbar-toggler.collapsed .icon-close {
 }
 
 /* ************************* */
-/* Dark theme */
+
 /* ************************* */
 /* CSS WHY CHOOSE US */
 .why__top h6 {
@@ -1376,6 +1320,19 @@ button.navbar-toggler.collapsed .icon-close {
     --bs-accordion-bg: var(--bg-color);
   }
 
+  .accordion-button::after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image: var(--bs-accordion-btn-icon);
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+  }
+
+
   .general__faq .accordion-button {
     color: var(--title-color);
   }
@@ -1407,6 +1364,10 @@ button.navbar-toggler.collapsed .icon-close {
   }
 
   .complete__bottom .tab-content .tab-pane p {
+    color: var(--title-color);
+  }
+
+  .complete__bottom2 .accordion-collapse .accordion-body h3 {
     color: var(--title-color);
   }
 
@@ -1447,6 +1408,8 @@ button.navbar-toggler.collapsed .icon-close {
   .owl-theme .owl-dots .owl-dot:hover span {
     background: #dc4f72;
   }
+
+
 
   /* add more css here */
 }
